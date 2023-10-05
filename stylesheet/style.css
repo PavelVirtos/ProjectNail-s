@@ -1,0 +1,409 @@
+/* Stiluri generale pentru pagină */
+body {
+  font-family: "Dancing Script", cursive !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: top !important;
+  min-height: 100vh !important;
+  padding: 10px;
+}
+
+/* Stil pentru titlu h1 */
+.titleh1 {
+  text-align: center;
+}
+
+/* Stil pentru titlul articolelor h2 */
+.articleh2 {
+  text-align: center;
+}
+
+/* Stil pentru bara de sus a paginii */
+.header-container {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 10px !important;
+  background-color: #f8f8f8 !important;
+  /* Adaugă o culoare de fundal la bara de sus */
+}
+
+/* Stil pentru logo */
+#logo {
+  margin: 0;
+}
+
+/* Stiluri pentru meniul de navigare */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a:visited {
+  text-decoration: none !important;
+  color: black !important;
+  font-size: x-large !important;
+
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none !important;
+  color: black !important;
+  font-size: x-large !important;
+
+  padding: 20px !important;
+}
+
+nav a:hover {
+  color: red;
+  font-weight: 400;
+  font-size: x-large;
+
+  padding: 20px;
+
+  border-radius: 25px;
+  border-style: hidden;
+  border-width: 1px;
+  border-color: blue;
+  background-image: radial-gradient(farthest-side, #f6c5eb, #f8f8f8);
+}
+
+/* Stiluri pentru iconițe de social media */
+.social-icons {
+  margin-right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+}
+
+.social-icons a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.social-icons i {
+  font-size: 24px;
+}
+
+/* Stiluri pentru imagini */
+.banner {
+  object-fit: contain;
+  height: 100%;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.feedbackImage {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contactImage {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+
+/* Stiluri pentru link-uri */
+.clean:visited {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.clean {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+/* Stiluri pentru input-uri și textarea-uri */
+input[type="text"],
+input[type="datetime-local"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Stiluri pentru butonul de submit */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Stiluri pentru formularul de acțiune */
+.formular-actiune {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* bootstrap */
+.container {
+  width: 100%;
+}
+
+.row-header {
+  font-weight: 600 !important;
+}
+
+.row-detail-container {
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  margin-right: 5px;
+  margin-left: 5px;
+
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: thin;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  box-shadow: 7px 3px 5px rgb(171, 171, 171);
+}
+
+.row-header-container {
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  margin-right: 5px;
+  margin-left: 5px;
+
+  border-style: solid;
+  border-color: rgb(247, 8, 219);
+  border-width: thin;
+
+  border-radius: 10px;
+
+  box-shadow: 10px 5px 5px rgb(167, 105, 160);
+}
+
+/* Stiluri pentru containerul postărilor */
+.postare-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Stiluri pentru postare */
+.postare {
+  flex: 0 0 calc(33.33% - 10px); /* Acesta împarte spațiul în 3 coloane și adaugă spațiu între ele */
+  box-sizing: border-box;
+  margin: 0 5px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.postare-imagine img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.postare-continut h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.postare-date {
+  text-align: center;
+}
+
+/* Stiluri pentru butoanele de partajare */
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  text-decoration: none;
+}
+
+.share-button i {
+  font-size: 20px;
+}
+
+.share-button.facebook {
+  background-color: #f3f5f7;
+}
+
+.share-button.instagram {
+  background-color: #e4405f;
+}
+
+.share-button.tiktok {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Stiluri pentru galerie */
+#gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-container {
+  max-width: 10200px;
+  margin: 0 auto;
+}
+
+.carousel {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Stiluri pentru formularul de contact */
+.formular-actiune {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formular-actiune input,
+.formular-actiune textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Stiluri pentru footer */
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.developer-info,
+.anpc-logo,
+.regulament-anpc {
+  flex: 0 0 30%;
+}
+
+.anpc-logo img {
+  max-width: 100%;
+}
+
+.footer-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: #e4405f;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* header */
+#header {
+  text-align: center;
+  padding: 20px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.contactDetails {
+  margin-bottom: 20px;
+}
+
+.contactImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* Developer info */
+.developer-info {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
